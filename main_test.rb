@@ -1,5 +1,7 @@
-require 'simplecov'
-SimpleCov.start if ENV['CIRCLE_ARTIFACTS']
+if ENV['CIRCLE_ARTIFACTS']
+  require 'simplecov'
+  SimpleCov.start
+end
 
 require 'minitest/autorun'
 require './main'

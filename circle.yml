@@ -3,6 +3,10 @@ machine:
   ruby:
     version:
       2.3.0
+  environment:
+    RAILS_ENV: test
+    RACK_ENV: test
+
 
 general:
   artifacts:
@@ -10,5 +14,5 @@ general:
 
 test:
   override:
-    - ruby main_test.rb
+    - bundle exec ruby main_test.rb
 
