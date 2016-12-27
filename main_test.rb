@@ -1,5 +1,9 @@
+require 'simplecov'
+SimpleCov.start if ENV['CIRCLE_ARTIFACTS']
+
 require 'minitest/autorun'
 require './main'
+
 
 class TestPPAP < Minitest::Test
 

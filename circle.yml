@@ -1,0 +1,14 @@
+machine:
+  # Version of ruby to use
+  ruby:
+    version:
+      2.3.0
+
+general:
+  artifacts:
+    - "~/simplecov" # relative to the user's home directory
+
+test:
+  override:
+    - ruby main_test.rb
+

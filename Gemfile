@@ -2,4 +2,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "minitest"
+gem "minitest", :require => false, :group => :test
+gem 'simplecov', :require => false, :group => :test
+
